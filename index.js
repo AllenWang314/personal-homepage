@@ -1,12 +1,14 @@
-const linkDivs = document.getElementsByClassName("header-link")
-const links = ["about", "projects"]
+const aboutDiv = document.getElementById("about")
+const projectDiv = document.getElementById("projects")
+const aboutLinkDiv = document.getElementById("about-link")
+const projectLinkDiv = document.getElementById("projects-link")
 
-for (const linkDiv of linkDivs) {
-    linkDiv.onclick = (_event) => {
-        for (const link of links) {
-            document.getElementById(link).style.display = "none";
-        }
-        console.log("triggered")
-        document.getElementById(linkDiv.innerHTML).style.display = "block";
-    };
-}
+aboutLinkDiv.onclick = (_event) => {
+    projectDiv.style.display = "none";
+    aboutDiv.style.display = "block";
+};
+
+projectLinkDiv.onclick = (_event) => {
+    aboutDiv.style.display = "none";
+    projectDiv.style.display = "flex";
+};
