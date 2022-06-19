@@ -81,6 +81,14 @@ body {
     gap: 20px;
 }
 
+@media screen and (max-width: 450px) {
+    #intro {
+      font-size: 40px;
+        background-color: black;
+        flex-wrap: wrap;
+    }
+}
+
 #intro-blurb {
     display: flex;
     flex-direction: column;
@@ -140,3 +148,4 @@ body {
     width: 200px;
     border-radius: 100px;
 }
+  
