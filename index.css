@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit');
 
 :root {
-    --lightblue: #fafaff;
+    --lightblue: #fbfbff;
     --blue: #bdd5ea;
     --darkblue: #577399;
     --orange: #fe5f55;
@@ -18,6 +18,11 @@ body {
     background-color: var(--lightblue);
     color: var(--gray);
     font-size: 2vh;
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
 }
 
 #header {
@@ -69,6 +74,7 @@ body {
 
 #container {
     max-width: 800px;
+    min-height: 50vh;
     margin: 3vh;
     display: flex;
     flex-direction: column;
@@ -111,6 +117,7 @@ body {
 .qa-wrapper {
     display: flex;
     flex-direction: row;
+    gap: 3vh;
 }
 
 .qa {
@@ -124,7 +131,6 @@ body {
     .qa-wrapper {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2vh;
     }
 }
 
@@ -141,7 +147,23 @@ body {
 }
 
 .a-img {
-    width: 30vh;
+    width: 25vh;
+    border-radius: 5px;
+    border: 1px solid var(--darkblue);
+}
+
+.a-img-wrapper {
+    justify-self: center;
+    display: flex;
+    flex-flow: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vh;
+    margin-top: 3vh;
+}
+
+.caption {
+    font-size: 1.5vh;
 }
 
 #footer {
@@ -188,7 +210,7 @@ body {
 #project-list {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3vh;
 }
 
 .project {
@@ -198,6 +220,8 @@ body {
     border: 1px solid var(--darkblue);
     border-radius: 10px;
     padding: 3vh;
+    background-color: var(--gray);
+    color: var(--blue)
 }
 
 @media (max-width: 60vh) {
@@ -207,15 +231,15 @@ body {
     }
 }
 
-.project:nth-child(2) {
+.project:nth-child(2n) {
     flex-direction: row-reverse;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
-    width: 65%;
+    width: 60%;
+    gap: 1.5vh;
 }
 
 @media (max-width: 60vh) {
@@ -225,14 +249,16 @@ body {
 }
 
 .project-title {
-    font-size: 3vh;;
+    font-size: 3vh;
+    font-weight: 900;
+    font-family: 'Kanit', sans-serif;
 }
 
 .graphic {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35%;
+    width: 40%;
     gap: 0.8vh;
 }
 
@@ -261,7 +287,7 @@ body {
 }
 
 .project-img {
-    width: 20vh;
+    width: 25vh;
     border-radius: 5px;
     border: 1px solid var(--darkblue);
 }
