@@ -23,10 +23,9 @@
     <meta property="og:type" content="website" />
 
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- Analytics -->
 
@@ -44,7 +43,7 @@
                 <div class="header-link" id="projects-link">projects</div>
             </div>
         </div>
-        <div id="about" style="display:none;">
+        <div id="about">
             <div id="intro">
                 <div id="headshot">
                     <img id="headshot" src="headshot.png" />
@@ -74,11 +73,11 @@
                     <div class="qa">
                         <div class="q">What are you up to now?</div>
                         <div class="a">
-                            This summer I'm learning how software engineers and highly motivated people can make an
+                            This summer I'm learning how software engineers and highly motivated youngsters can make an
                             impact in the climate tech space as a continuation of an on-and-off project for the last two
                             years. Global warming is the greatest existential threat to humanity this century, and now
-                            is the time to act! Outside of work, I'm piloting with a humanities enrichment group,
-                            exercising, and learning more about systems.
+                            is the time to act. Outside of work, I'm piloting an enrichment group,
+                            exercising more, and learning about systems.
                         </div>
                     </div>
                     <div class="a-img-wrapper">
@@ -109,10 +108,10 @@
                         <div class="q">What do you do for fun?</div>
                         <div class="a">A mélange of endeavors... I enjoy reading about tech, the news, and how people
                             think.
-                            I get excited about making useful things for people and building good culture. I like
+                            I get excited about making useful things for people and creating cultured communities. I like
                             impressing
-                            tipsy teammates with my mediocre card magic, playing music with friends, and maintaining a
-                            healthy workout routine. When I'm feeling it, I'd trek long distances and listen to the
+                            tipsy teammates with my mediocre card magic, making music with friends, and maintaining a
+                            healthy workout routine. When I'm feeling it, I trek long distances, chase bunnies, and listen to the
                             world.
                         </div>
                     </div>
@@ -127,9 +126,9 @@
                 </div>
             </div>
         </div>
-        <div id="projects">
+        <div id="projects" style="display:none;">
             <div id="project-intro">
-                I'm working on a project in the climate tech space and maintaining <a href="https://autocomp.io" target="blank"> Autocomp</a>, an online math organization website which I helped out building. Shoutout to Antonio, who did most of the heavy lifting for Autocomp's UI! If you're interested in what I'm working on, feel free to reach out! You can find some of my other work below; most of them are deployed to my EC2 with Nginx as a reverse proxy.
+                I'm working on a project in the climate tech space while maintaining <a href="https://autocomp.io" target="blank"> Autocomp</a>, an online math organization website which I helped build. Shoutout to Antonio, who did most of the heavy lifting for Autocomp's UI! If you're interested in what I'm working on, feel free to reach out. You can find some of my other work below; most of them are deployed to my EC2 with Nginx as a reverse proxy.
             </div>
             <div id="project-list">
                 <div class="project">
@@ -138,10 +137,10 @@
                             Ballot: HackMIT's Judging System
                         </div>
                         <div>
-                            I designed and built out HackMIT's virtual judging system, ballot, with a wonderful dev team. The app uses graph theory and probabilistic algorithms to optimize scheduling and infer rankings.
+                            I designed and built out ballot, HackMIT's virtual judging system, with a wonderful dev team. The app uses graph theory and probabilistic algorithms to optimize scheduling and infer rankings.
                         </div> 
                         <div>
-                            I've also worked on HackMIT's 2020 &amp; 2021 <a href="https://archive.hackmit.org" target="blank">splash pages</a>, virtual hackathon <a href="https://github.com/HackMIT/playground" target="blank">platform</a>, <a href="https://spectacle.hackmit.org/" target="blank">project expo</a>, and <a href="https://github.com/techx/helpqueue" target="blank">help queue</a>. 
+                            I've also worked on HackMIT's 2020 &amp; 2021 <a href="https://archive.hackmit.org" target="blank">splash pages</a>, virtual hackathon <a href="https://github.com/HackMIT/playground" target="blank">platform</a>, puzzle, <a href="https://spectacle.hackmit.org/" target="blank">project expo</a>, and <a href="https://github.com/techx/helpqueue" target="blank">help queue</a>. 
                         </div>
                     </div>
                     <div class="graphic">
@@ -161,7 +160,7 @@
                             AKQ Game
                         </div>
                         <div>
-                            I gave a talk about Caro's AKQ game at MathILy, a summer program I attended. Since the program was remote, I coded up an online game that allowed students to play against each other.
+                            I presented Caro's AKQ game at MathILy, a summer program I attended. Since the program was remote, I coded up an online game that allowed students to play against each other.
                         </div>
                         <div>
                             This two-player game uses WebSocket and gorilla/socket for real-time updates.
@@ -186,10 +185,10 @@
                             Cryptogram Solver
                         </div>
                         <div>
-                            I coded an MCMC-based cryptogram solver for MIT's inference and information course. My report was recognized for its unique approach of using a symmetrized form of KL divergence to find a better initial state.
+                            I implemented an MCMC-based cryptogram solver for MIT's inference and information course. My report was recognized for its unique approach of using a symmetrized form of KL divergence to find a better initial state.
                         </div>
                         <div>
-                            After the course, I exported half the project into an app. Now it runs outside the CLI!
+                            After the course, I exported half the project into an app. Now it runs outside the CLI 😀.
                         </div>
                     </div>
                     <div class="graphic">
@@ -211,10 +210,10 @@
                             Matrix Walker: Cache-Oblivious Indexing
                         </div>
                         <div>
-                            We implement cache-oblivious indexing for matrices using row-major, hilbert, and z indexing and benchmark cache misses using valgrind on an EC2. To help visualize the indexing schemes, we built a static site to "walk" along the matrix.
+                            We implemented cache-oblivious indexing for matrices using row-major, hilbert, and z indexing and benchmark cache misses using valgrind on an EC2. To help visualize the indexing schemes, we built a static site to "walk" along the matrix.
                         </div>
                         <div>
-                            The project was done in collaboration with Jett Wang and under the mentorship of Erik Demaine.
+                            The research project was conducted in collaboration with Jett Wang and under the mentorship of Erik Demaine.
                         </div>
                     </div>
                     <div class="graphic">
@@ -258,7 +257,7 @@
                             When To Meet... but better
                         </div>
                         <div>
-                            Antonio Frigo and I built a mobile friendly version of <a href="https://www.when2meet.com/" target="blank">when2meet</a> with a better UI. We also added dark mode, since why not!? This was my first coding project, so the code does not exactly implement the best practices 😛.
+                            Antonio Frigo and I built a mobile friendly version of <a href="https://www.when2meet.com/" target="blank">when2meet</a> with a better UI. We also added dark mode, since why not!? This was my first project, so the code does not exactly implement the best practices 😛.
                         </div>
                     </div>
                     <div class="graphic">
@@ -284,7 +283,7 @@
             <a href="https://www.linkedin.com/in/allenwang314/" target="blank" class="fa fa-2x fa-linkedin"></a>
         </div>
         <div>
-            Made with ❤ by Allen Wang
+            Made with ❤ by Allen Wang (updated 06/2022)
         </div>
     </div>
 </body>
