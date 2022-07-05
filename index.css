@@ -51,6 +51,7 @@ a {
 .header-link {
     display: inline-block;
     position: relative;
+    cursor-style: pointer;
 }
   
   
@@ -65,7 +66,6 @@ a {
     background-color: var(--orange);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-    cursor-style: pointer;
 }
 
 .header-link:hover:after {
