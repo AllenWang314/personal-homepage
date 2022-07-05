@@ -51,7 +51,7 @@ a {
 .header-link {
     display: inline-block;
     position: relative;
-    cursor-style: pointer;
+    cursor: pointer;
 }
   
   
